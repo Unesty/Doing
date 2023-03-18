@@ -10,8 +10,9 @@
 
 int main(int argc, char** argv)
 {
-	char wm[1000000];
+	char wm[1000000]; //Модель мира
 	setlocale(LC_ALL,"ru_RU.UTF-8");
+	// Сначала нужно понять как составлять и запускать исполняемый код
 	std::ifstream input_file(argv[1], std::ifstream::binary);
 	if (input_file)
 	{

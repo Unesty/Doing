@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+    <key id="labels.policy" attr.name="labels.policy" for="graph" attr.type="integer">
+        <default>0</default>
+    </key>
+    <key id="color" attr.name="color" for="edge" attr.type="string">
+        <default>#6f73c0</default>
+    </key>
+    <key id="direction" attr.name="direction" for="edge" attr.type="string">
+        <default>directed</default>
+    </key>
+    <key id="label.color" attr.name="label.color" for="edge" attr.type="string">
+        <default>#aad6ff</default>
+    </key>
+    <key id="label.font" attr.name="label.font" for="edge" attr.type="string">
+        <default>Noto Sans,7,-1,0,50,0,0,0,0,0</default>
+    </key>
+    <key id="labels.visibleIds" attr.name="labels.visibleIds" for="edge" attr.type="string">
+        <default>label</default>
+    </key>
+    <key id="points" attr.name="points" for="edge" attr.type="string"/>
+    <key id="style" attr.name="style" for="edge" attr.type="string">
+        <default>solid</default>
+    </key>
+    <key id="weight" attr.name="weight" for="edge" attr.type="double">
+        <default>1</default>
+    </key>
+    <key id="0" attr.name="0" for="node" attr.type="integer">
+        <default>0</default>
+    </key>
+    <key id="Type" attr.name="Type" for="node" attr.type="string">
+        <default>transitoin</default>
+    </key>
+    <key id="color" attr.name="color" for="node" attr.type="string">
+        <default>#000000</default>
+    </key>
+    <key id="label.color" attr.name="label.color" for="node" attr.type="string">
+        <default>#dcdcdc</default>
+    </key>
+    <key id="labels.visibleIds" attr.name="labels.visibleIds" for="node" attr.type="string">
+        <default>label</default>
+    </key>
+    <key id="shape" attr.name="shape" for="node" attr.type="string">
+        <default>disc</default>
+    </key>
+    <key id="stroke.color" attr.name="stroke.color" for="node" attr.type="string">
+        <default>#6f73c0</default>
+    </key>
+    <key id="stroke.size" attr.name="stroke.size" for="node" attr.type="double">
+        <default>1</default>
+    </key>
+    <key id="stroke.style" attr.name="stroke.style" for="node" attr.type="string">
+        <default>solid</default>
+    </key>
+    <key id="x" attr.name="x" for="node" attr.type="float"/>
+    <key id="y" attr.name="y" for="node" attr.type="float"/>
+    <graph edgedefault="directed">
+        <node id="N26">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">3175</data>
+            <data key="y">-125</data>
+        </node>
+        <node id="N175">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">1275</data>
+        </node>
+        <node id="N47">
+            <data key="height">11</data>
+            <data key="label">программа поиска
+кратчайшего пути
+деятеля</data>
+            <data key="width">11</data>
+            <data key="x">-1600</data>
+            <data key="y">275</data>
+        </node>
+        <node id="N160">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N120">
+            <data key="height">11</data>
+            <data key="label">fn find_shortest_path</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N52">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">675</data>
+        </node>
+        <node id="N141">
+            <data key="height">11</data>
+            <data key="label">структура инструкции</data>
+            <data key="width">11</data>
+            <data key="x">2325</data>
+            <data key="y">-775</data>
+        </node>
+        <node id="N67">
+            <data key="height">11</data>
+            <data key="label">живая программа &quot;Оптимизатор&quot;</data>
+            <data key="stroke.color">#3399ff</data>
+            <data key="width">11</data>
+            <data key="x">350</data>
+            <data key="y">675</data>
+        </node>
+        <node id="N144">
+            <data key="height">11</data>
+            <data key="label">байт адрес 2 операнда</data>
+            <data key="width">11</data>
+            <data key="x">2475</data>
+            <data key="y">-675</data>
+        </node>
+        <node id="N89">
+            <data key="height">11</data>
+            <data key="label">в основном, значимого для
+свспкп</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">-300</data>
+        </node>
+        <node id="N122">
+            <data key="height">11</data>
+            <data key="label">процедура поиска кратчайшего пути 
+получения как можно большего
+количества кратчайших путей</data>
+            <data key="width">11</data>
+            <data key="x">2075</data>
+            <data key="y">500</data>
+        </node>
+        <node id="N95">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-900</data>
+            <data key="y">-800</data>
+        </node>
+        <node id="N28">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">-200</data>
+        </node>
+        <node id="N172">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">1325</data>
+        </node>
+        <node id="N138">
+            <data key="height">11</data>
+            <data key="label">список инструкций</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">-700</data>
+        </node>
+        <node id="N119">
+            <data key="height">11</data>
+            <data key="label">fn decode_graph_node</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N97">
+            <data key="height">11</data>
+            <data key="label">граф реализации формата</data>
+            <data key="width">11</data>
+            <data key="x">-100</data>
+            <data key="y">-450</data>
+        </node>
+        <node id="N133">
+            <data key="height">11</data>
+            <data key="label">начало исполняемой
+области памяти</data>
+            <data key="width">11</data>
+            <data key="x">1525</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N64">
+            <data key="height">11</data>
+            <data key="label">точка входа</data>
+            <data key="width">11</data>
+            <data key="x">275</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N106">
+            <data key="height">11</data>
+            <data key="label">исполнитель</data>
+            <data key="width">11</data>
+            <data key="x">1525</data>
+            <data key="y">-100</data>
+        </node>
+        <node id="N83">
+            <data key="height">11</data>
+            <data key="label">процесс создания</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">-525</data>
+        </node>
+        <node id="N196">
+            <data key="height">11</data>
+            <data key="label">годится для простых случаев с распространёнными аналогиями</data>
+            <data key="width">11</data>
+            <data key="x">600</data>
+            <data key="y">-675</data>
+        </node>
+        <node id="N146">
+            <data key="height">11</data>
+            <data key="label">байт адрес вывода</data>
+            <data key="width">11</data>
+            <data key="x">2475</data>
+            <data key="y">-625</data>
+        </node>
+        <node id="N154">
+            <data key="height">11</data>
+            <data key="label">or</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-425</data>
+        </node>
+        <node id="N93">
+            <data key="height">11</data>
+            <data key="label">путепроходец</data>
+            <data key="width">11</data>
+            <data key="x">-900</data>
+            <data key="y">-875</data>
+        </node>
+        <node id="N53">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N140">
+            <data key="height">11</data>
+            <data key="label">cmp</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-525</data>
+        </node>
+        <node id="Copy1 of N11">
+            <data key="height">11</data>
+            <data key="label">поиск кратчайшего пути
+</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N137">
+            <data key="height">11</data>
+            <data key="label">исполнить инструкцию</data>
+            <data key="width">11</data>
+            <data key="x">2025</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N161">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N82">
+            <data key="height">11</data>
+            <data key="label">реализации формата</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">-450</data>
+        </node>
+        <node id="N149">
+            <data key="height">11</data>
+            <data key="label">копия памяти</data>
+            <data key="width">11</data>
+            <data key="x">1850</data>
+            <data key="y">-225</data>
+        </node>
+        <node id="N188">
+            <data key="height">11</data>
+            <data key="label">дополнительные данные</data>
+            <data key="width">11</data>
+            <data key="x">-825</data>
+            <data key="y">1375</data>
+        </node>
+        <node id="N88">
+            <data key="height">11</data>
+            <data key="label">могут хранить больше данных, чем
+дискретные реализации, использующие
+те же материалы, например транзистор
+нелинейный может сохранить больше
+состояний, чем двоичный при том же
+размере. Конденсатор, катушка индуктивности
+преимущественно для хранения нелинейных
+данных используются,  часто чувствительны, 
+что уменьшает число различимых состояний
+и замедляет производство,
+не требуют сложных схем для декодировки,
+кодировки.</data>
+            <data key="width">11</data>
+            <data key="x">-725</data>
+            <data key="y">-1175</data>
+        </node>
+        <node id="N98">
+            <data key="height">11</data>
+            <data key="label">энкодер</data>
+            <data key="width">11</data>
+            <data key="x">-25</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N48">
+            <data key="height">11</data>
+            <data key="label">вход</data>
+            <data key="width">11</data>
+            <data key="x">-1225</data>
+            <data key="y">175</data>
+        </node>
+        <node id="N3">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">100</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N40">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-1475</data>
+            <data key="y">-200</data>
+        </node>
+        <node id="N143">
+            <data key="height">11</data>
+            <data key="label">байт адрес 1 операнда</data>
+            <data key="width">11</data>
+            <data key="x">2475</data>
+            <data key="y">-729</data>
+        </node>
+        <node id="N96">
+            <data key="height">11</data>
+            <data key="label">в данном случае,
+процессорных инструкций,
+регистров, ОЗУ</data>
+            <data key="width">11</data>
+            <data key="x">-525</data>
+            <data key="y">-875</data>
+        </node>
+        <node id="N162">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">250</data>
+        </node>
+        <node id="N185">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-100</data>
+            <data key="y">1425</data>
+        </node>
+        <node id="N23">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">-775</data>
+        </node>
+        <node id="N65">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">350</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N71">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">575</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N105">
+            <data key="height">11</data>
+            <data key="label">исполнение инструкций процессора</data>
+            <data key="width">11</data>
+            <data key="x">1325</data>
+            <data key="y">-100</data>
+        </node>
+        <node id="N79">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">625</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N186">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">1400</data>
+        </node>
+        <node id="N103">
+            <data key="height">11</data>
+            <data key="label">запись в память</data>
+            <data key="width">11</data>
+            <data key="x">1400</data>
+            <data key="y">-25</data>
+        </node>
+        <node id="N33">
+            <data key="height">11</data>
+            <data key="label">нужен для получения большего количества 
+нового в условиях опасности(всегда)</data>
+            <data key="width">11</data>
+            <data key="x">-650</data>
+            <data key="y">-75</data>
+        </node>
+        <node id="N10">
+            <data key="height">11</data>
+            <data key="label">отправка
+</data>
+            <data key="width">11</data>
+            <data key="x">200</data>
+            <data key="y">-25</data>
+        </node>
+        <node id="N51">
+            <data key="height">11</data>
+            <data key="label">расширение, упрощение 2</data>
+            <data key="width">11</data>
+            <data key="x">-325</data>
+            <data key="y">675</data>
+        </node>
+        <node id="N171">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">1275</data>
+        </node>
+        <node id="N147">
+            <data key="height">11</data>
+            <data key="label">изменённая память</data>
+            <data key="width">11</data>
+            <data key="x">2100</data>
+            <data key="y">-225</data>
+        </node>
+        <node id="N73">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">825</data>
+        </node>
+        <node id="N61">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">175</data>
+            <data key="y">575</data>
+        </node>
+        <node id="N107">
+            <data key="height">11</data>
+            <data key="label">исполнение прочих
+программ</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1425</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N50">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-100</data>
+            <data key="y">600</data>
+        </node>
+        <node id="N21">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">175</data>
+        </node>
+        <node id="Copy1 of N42">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">575</data>
+        </node>
+        <node id="N180">
+            <data key="height">11</data>
+            <data key="label">программа ищущая неизвестное</data>
+            <data key="width">11</data>
+            <data key="x">-550</data>
+            <data key="y">1375</data>
+        </node>
+        <node id="N166">
+            <data key="height">11</data>
+            <data key="label">loop</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-125</data>
+        </node>
+        <node id="Copy1 of Copy1 of N43">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">575</data>
+        </node>
+        <node id="N197">
+            <data key="height">11</data>
+            <data key="label">ASIC</data>
+            <data key="width">11</data>
+            <data key="x">750</data>
+            <data key="y">-825</data>
+        </node>
+        <node id="N184">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-500</data>
+            <data key="y">1475</data>
+        </node>
+        <node id="N49">
+            <data key="height">11</data>
+            <data key="label">выход</data>
+            <data key="width">11</data>
+            <data key="x">-1850</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N156">
+            <data key="height">11</data>
+            <data key="label">add</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-325</data>
+        </node>
+        <node id="N118">
+            <data key="height">11</data>
+            <data key="label">fn encode_graph</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N17">
+            <data key="height">11</data>
+            <data key="label">программа</data>
+            <data key="width">11</data>
+            <data key="x">-1375</data>
+            <data key="y">25</data>
+        </node>
+        <node id="N109">
+            <data key="height">11</data>
+            <data key="label">исполняемая
+область</data>
+            <data key="width">11</data>
+            <data key="x">1700</data>
+            <data key="y">-50</data>
+        </node>
+        <node id="N113">
+            <data key="height">11</data>
+            <data key="label">в другой реализации доступ
+к памяти может быть ограничен
+чтобы симулировать получение
+больших данных из меньших</data>
+            <data key="width">11</data>
+            <data key="x">1650</data>
+            <data key="y">325</data>
+        </node>
+        <node id="N126">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N178">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-250</data>
+            <data key="y">1375</data>
+        </node>
+        <node id="N165">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2325</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N8">
+            <data key="height">11</data>
+            <data key="label">agent1</data>
+            <data key="width">11</data>
+            <data key="x">150</data>
+            <data key="y">25</data>
+        </node>
+        <node id="N115">
+            <data key="height">11</data>
+            <data key="label">область с процедурами
+agent0.1</data>
+            <data key="width">11</data>
+            <data key="x">1725</data>
+            <data key="y">0</data>
+        </node>
+        <node id="N132">
+            <data key="height">11</data>
+            <data key="label">executable code</data>
+            <data key="width">11</data>
+            <data key="x">2025</data>
+            <data key="y">250</data>
+        </node>
+        <node id="N159">
+            <data key="height">11</data>
+            <data key="label">div</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-175</data>
+        </node>
+        <node id="N111">
+            <data key="height">11</data>
+            <data key="label">данные</data>
+            <data key="width">11</data>
+            <data key="x">1775</data>
+            <data key="y">-75</data>
+        </node>
+        <node id="N135">
+            <data key="height">11</data>
+            <data key="label">прочесть область памяти
+с 1 инструкцией</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N57">
+            <data key="height">11</data>
+            <data key="label">2 перехода с одинаковыми входами обозначают
+один и тот же переход</data>
+            <data key="shape">disc</data>
+            <data key="width">11</data>
+            <data key="x">225</data>
+            <data key="y">300</data>
+        </node>
+        <node id="N187">
+            <data key="height">11</data>
+            <data key="label">На этом графе процессов самом по
+себе не получить больше данных, можно
+только уменьшить граф, или изменить
+форму, например чтобы упростить понимание,
+нужно получить больший
+граф и на нём найти недостающую
+информацию.</data>
+            <data key="width">11</data>
+            <data key="x">0</data>
+            <data key="y">1175</data>
+        </node>
+        <node id="N16">
+            <data key="height">11</data>
+            <data key="label">программа </data>
+            <data key="width">11</data>
+            <data key="x">-425</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N75">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">975</data>
+        </node>
+        <node id="N108">
+            <data key="height">11</data>
+            <data key="label">исполнение
+agent0.1</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1650</data>
+            <data key="y">75</data>
+        </node>
+        <node id="N11">
+            <data key="height">11</data>
+            <data key="label">поиск кратчайшего пути
+</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">25</data>
+        </node>
+        <node id="N164">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">350</data>
+        </node>
+        <node id="N145">
+            <data key="height">11</data>
+            <data key="label">Есть много способов реализовать 8 битный
+процессор. Нам здесь важны логические
+инструкции. Прыжки лучше не использовать
+для сохранения простоты. Можно использовать
+конечные циклы и ветвления. Для цикла нужно
+считать. Если вывод происходит в память
+во время её исполнения, то от
+бесконечных циклов это не спасёт. Нужна
+двойная буферизация.</data>
+            <data key="width">11</data>
+            <data key="x">2125</data>
+            <data key="y">-925</data>
+        </node>
+        <node id="N74">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">900</data>
+        </node>
+        <node id="N72">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">750</data>
+        </node>
+        <node id="N25">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">1650</data>
+        </node>
+        <node id="N114">
+            <data key="height">11</data>
+            <data key="label">прочие области
+исполнемые</data>
+            <data key="width">11</data>
+            <data key="x">1475</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N99">
+            <data key="height">11</data>
+            <data key="label">декодер</data>
+            <data key="width">11</data>
+            <data key="x">50</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N9">
+            <data key="height">11</data>
+            <data key="label">приём
+</data>
+            <data key="width">11</data>
+            <data key="x">125</data>
+            <data key="y">-25</data>
+        </node>
+        <node id="N76">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">1050</data>
+        </node>
+        <node id="N92">
+            <data key="height">11</data>
+            <data key="label">граф процессов</data>
+            <data key="width">11</data>
+            <data key="x">-700</data>
+            <data key="y">-875</data>
+        </node>
+        <node id="N69">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">425</data>
+        </node>
+        <node id="N32">
+            <data key="height">11</data>
+            <data key="label">память, время работы</data>
+            <data key="width">11</data>
+            <data key="x">400</data>
+            <data key="y">-325</data>
+        </node>
+        <node id="N102">
+            <data key="height">11</data>
+            <data key="label">agent0.1</data>
+            <data key="width">11</data>
+            <data key="x">1325</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N46">
+            <data key="height">11</data>
+            <data key="label">неограниченный граф
+возможных программ
+реализованный энкодером,
+декодером</data>
+            <data key="width">11</data>
+            <data key="x">-1325</data>
+            <data key="y">275</data>
+        </node>
+        <node id="N179">
+            <data key="height">11</data>
+            <data key="label">причины этого перехода известны не полностью</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">1425</data>
+        </node>
+        <node id="N22">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-475</data>
+            <data key="y">-2300</data>
+        </node>
+        <node id="N56">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-125</data>
+            <data key="y">750</data>
+        </node>
+        <node id="N128">
+            <data key="height">11</data>
+            <data key="label">тип, связи вершины</data>
+            <data key="width">11</data>
+            <data key="x">2025</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N117">
+            <data key="height">11</data>
+            <data key="label">прочие данные</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">0</data>
+        </node>
+        <node id="N155">
+            <data key="height">11</data>
+            <data key="label">and</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-375</data>
+        </node>
+        <node id="N68">
+            <data key="height">11</data>
+            <data key="label">упрощение -1</data>
+            <data key="width">11</data>
+            <data key="x">-325</data>
+            <data key="y">425</data>
+        </node>
+        <node id="N129">
+            <data key="height">11</data>
+            <data key="label">граф процесса получения
+больших возможностей</data>
+            <data key="width">11</data>
+            <data key="x">2025</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N60">
+            <data key="height">11</data>
+            <data key="label">жизнь</data>
+            <data key="width">11</data>
+            <data key="x">125</data>
+            <data key="y">575</data>
+        </node>
+        <node id="N66">
+            <data key="height">11</data>
+            <data key="label">do</data>
+            <data key="width">11</data>
+            <data key="x">425</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N112">
+            <data key="height">11</data>
+            <data key="label">работа программы</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1525</data>
+            <data key="y">-50</data>
+        </node>
+        <node id="N44">
+            <data key="height">11</data>
+            <data key="label">расширение 0
+</data>
+            <data key="width">11</data>
+            <data key="x">-325</data>
+            <data key="y">475</data>
+        </node>
+        <node id="N183">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-400</data>
+            <data key="y">1475</data>
+        </node>
+        <node id="N86">
+            <data key="height">11</data>
+            <data key="label">граф создания реализации </data>
+            <data key="stroke.color">#3399ff</data>
+            <data key="width">11</data>
+            <data key="x">-775</data>
+            <data key="y">-725</data>
+        </node>
+        <node id="N191">
+            <data key="height">11</data>
+            <data key="label">электроприбор</data>
+            <data key="width">11</data>
+            <data key="x">475</data>
+            <data key="y">-950</data>
+        </node>
+        <node id="N104">
+            <data key="height">11</data>
+            <data key="label">чтение из памяти</data>
+            <data key="width">11</data>
+            <data key="x">1250</data>
+            <data key="y">-25</data>
+        </node>
+        <node id="N168">
+            <data key="height">11</data>
+            <data key="label">частичные данные
+о переходах</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">1000</data>
+        </node>
+        <node id="N54">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-125</data>
+            <data key="y">700</data>
+        </node>
+        <node id="N150">
+            <data key="height">11</data>
+            <data key="label">запись</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">2000</data>
+            <data key="y">-225</data>
+        </node>
+        <node id="N177">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-300</data>
+            <data key="y">1375</data>
+        </node>
+        <node id="N153">
+            <data key="height">11</data>
+            <data key="label">not</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-475</data>
+        </node>
+        <node id="N85">
+            <data key="height">11</data>
+            <data key="label">этот процесс тоже
+описывается графом
+процессов</data>
+            <data key="width">11</data>
+            <data key="x">-450</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N174">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">1325</data>
+        </node>
+        <node id="N62">
+            <data key="height">11</data>
+            <data key="label">смерть</data>
+            <data key="width">11</data>
+            <data key="x">225</data>
+            <data key="y">575</data>
+        </node>
+        <node id="N37">
+            <data key="height">11</data>
+            <data key="label">нужен для оптимизации программ
+записанных в графе, из которых они
+компилируются в код/компьютер</data>
+            <data key="width">11</data>
+            <data key="x">-650</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N170">
+            <data key="height">11</data>
+            <data key="label">граф процессов, где известна часть</data>
+            <data key="stroke.color">#3399ff</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">1175</data>
+        </node>
+        <node id="N18">
+            <data key="height">11</data>
+            <data key="label">представление в процессе =
+в состояниях сис-мы</data>
+            <data key="width">11</data>
+            <data key="x">-125</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N169">
+            <data key="height">11</data>
+            <data key="label">работающий ИИ агент в симуляции даст
+частичные данные о процессах ИИ
+агента в обществе, в физическом мире,
+и в решении задач</data>
+            <data key="width">11</data>
+            <data key="x">-725</data>
+            <data key="y">1000</data>
+        </node>
+        <node id="N194">
+            <data key="height">11</data>
+            <data key="label">цифровая симуляция</data>
+            <data key="width">11</data>
+            <data key="x">475</data>
+            <data key="y">-850</data>
+        </node>
+        <node id="N189">
+            <data key="height">11</data>
+            <data key="label">среды исполнения</data>
+            <data key="width">11</data>
+            <data key="x">350</data>
+            <data key="y">-950</data>
+        </node>
+        <node id="Copy1 of N53">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-75</data>
+            <data key="y">675</data>
+        </node>
+        <node id="N125">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">150</data>
+        </node>
+        <node id="N2">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">100</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N77">
+            <data key="height">11</data>
+            <data key="label">укоротитель сбора данных,
+чтения, записи, где программа написана на AOT PL,
+потому поиск пути происходит только среди данных</data>
+            <data key="width">11</data>
+            <data key="x">700</data>
+            <data key="y">-125</data>
+        </node>
+        <node id="N70">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">500</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N14">
+            <data key="Type">process</data>
+            <data key="height">11</data>
+            <data key="label">то же в виде графа процессов</data>
+            <data key="stroke.color">#3399ff</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">300</data>
+        </node>
+        <node id="N59">
+            <data key="height">11</data>
+            <data key="label">так как оптимизация программы оптимизации программы
+это цикл, то понадобится дополнительная информация
+получаемая как из множества отдельных результатов, так
+и из окружающего мира</data>
+            <data key="width">11</data>
+            <data key="x">-450</data>
+            <data key="y">275</data>
+        </node>
+        <node id="N27">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-450</data>
+            <data key="y">100</data>
+        </node>
+        <node id="Copy1 of Copy1 of Copy1 of N43">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">550</data>
+        </node>
+        <node id="N43">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-125</data>
+            <data key="y">475</data>
+        </node>
+        <node id="N139">
+            <data key="height">11</data>
+            <data key="label">mov</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-575</data>
+        </node>
+        <node id="N63">
+            <data key="height">11</data>
+            <data key="label">здесь сознание может существовать в
+одной из вариантов симуляций
+например среди компьютерных вирусов
+в таком случае оно будет содержать
+исполняемый код и граф процессов о
+нём и окружающий мир
+этот исполняемый код мог бы
+интерпретировать граф, что упростит
+дебаггинг, а затем сам сделать JIT в
+результате поиска укорочения пути</data>
+            <data key="stroke.color">#000000</data>
+            <data key="width">11</data>
+            <data key="x">50</data>
+            <data key="y">700</data>
+        </node>
+        <node id="N176">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-400</data>
+            <data key="y">1375</data>
+        </node>
+        <node id="N123">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">300</data>
+        </node>
+        <node id="N124">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N157">
+            <data key="height">11</data>
+            <data key="label">sub</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-275</data>
+        </node>
+        <node id="N142">
+            <data key="height">11</data>
+            <data key="label">байт id инструкции</data>
+            <data key="width">11</data>
+            <data key="x">2475</data>
+            <data key="y">-775</data>
+        </node>
+        <node id="N24">
+            <data key="height">11</data>
+            <data key="label">То есть, данные хранятся в памяти.
+Они используются для перебора
+возможных значений в целях 
+предсказания будущего.
+Переходы между состояниями
+записываются в процессах.</data>
+            <data key="width">11</data>
+            <data key="x">-1125</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N80">
+            <data key="height">11</data>
+            <data key="label">то есть проблема в количестве данных
+которые нужно добавить в программу и граф до начала</data>
+            <data key="width">11</data>
+            <data key="x">1100</data>
+            <data key="y">-175</data>
+        </node>
+        <node id="N100">
+            <data key="height">11</data>
+            <data key="label">программа для CPU</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">-625</data>
+        </node>
+        <node id="N36">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-650</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N30">
+            <data key="height">11</data>
+            <data key="label">возможно должен учесть
+в одном из возможных
+конкретных случаев</data>
+            <data key="width">11</data>
+            <data key="x">400</data>
+            <data key="y">-200</data>
+        </node>
+        <node id="N35">
+            <data key="height">11</data>
+            <data key="label">нужен для записи большего количества
+нового в условиях недостаточной памяти
+и для ускорения, надёжности энкодеров,
+декодеров</data>
+            <data key="width">11</data>
+            <data key="x">-650</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N190">
+            <data key="height">11</data>
+            <data key="label">процессор</data>
+            <data key="width">11</data>
+            <data key="x">750</data>
+            <data key="y">-950</data>
+        </node>
+        <node id="N148">
+            <data key="height">11</data>
+            <data key="label">скопировать память</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1725</data>
+            <data key="y">-225</data>
+        </node>
+        <node id="N152">
+            <data key="height">11</data>
+            <data key="label">Значит процессор этот должен компилировать, исполнять
+граф с программой поиска пути. И всё это получается меньше 8
+инструкций если память 32 байт, инструкция 4 байт. Если
+инструкцию уменьшить в 2 раза, то получится меньше 16, что
+опять мало. Получается снова задача оптимизации. Пока что я
+просто сделаю 16 бит процессор.</data>
+            <data key="width">11</data>
+            <data key="x">1975</data>
+            <data key="y">-1200</data>
+        </node>
+        <node id="N1">
+            <port name="Port 1" color="#a0a0a4" anchor="132" x="0" y="0"/>
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">175</data>
+            <data key="y">100</data>
+        </node>
+        <node id="N116">
+            <data key="height">11</data>
+            <data key="label">граф процессов в
+agent0.1</data>
+            <data key="width">11</data>
+            <data key="x">1875</data>
+            <data key="y">0</data>
+        </node>
+        <node id="N13">
+            <data key="height">11</data>
+            <data key="label">возможные процессы</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">-25</data>
+        </node>
+        <node id="N167">
+            <data key="height">11</data>
+            <data key="label">Нужно инструкции записать в
+графе процессов. Но не
+обязательно описывать сам
+процессор, достаточно
+описать к чему приведёт
+запись инструкции в
+памяти.</data>
+            <data key="width">11</data>
+            <data key="x">1425</data>
+            <data key="y">-500</data>
+        </node>
+        <node id="N15">
+            <data key="Type">transition</data>
+            <data key="height">11</data>
+            <data key="label">переход</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-50</data>
+            <data key="y">400</data>
+        </node>
+        <node id="N19">
+            <data key="height">11</data>
+            <data key="label">энкодер</data>
+            <data key="width">11</data>
+            <data key="x">-25</data>
+            <data key="y">-100</data>
+        </node>
+        <node id="N87">
+            <data key="height">11</data>
+            <data key="label">аналоговые кодировки</data>
+            <data key="width">11</data>
+            <data key="x">-350</data>
+            <data key="y">-1025</data>
+        </node>
+        <node id="N78">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">625</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N195">
+            <data key="height">11</data>
+            <data key="label">аналоговая симуляция в голове</data>
+            <data key="width">11</data>
+            <data key="x">475</data>
+            <data key="y">-775</data>
+        </node>
+        <node id="N110">
+            <data key="height">11</data>
+            <data key="label">память</data>
+            <data key="width">11</data>
+            <data key="x">1725</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N39">
+            <data key="height">11</data>
+            <data key="label">поиск кратчайшего пути, реализующего алгоритм, записанный в графе,
+на графе возможных программ и запись исполняемого кода</data>
+            <data key="width">11</data>
+            <data key="x">-1875</data>
+            <data key="y">425</data>
+        </node>
+        <node id="N81">
+            <data key="height">11</data>
+            <data key="label">адресуемая память</data>
+            <data key="width">11</data>
+            <data key="x">-75</data>
+            <data key="y">-275</data>
+        </node>
+        <node id="N181">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-475</data>
+            <data key="y">1275</data>
+        </node>
+        <node id="N41">
+            <data key="height">11</data>
+            <data key="label">исчисление</data>
+            <data key="width">11</data>
+            <data key="x">-1100</data>
+            <data key="y">-450</data>
+        </node>
+        <node id="N58">
+            <data key="height">11</data>
+            <data key="label">у перехода один выход ли?
+ежели так, то как поделить
+процесс на подпроцессы, не
+разделяя переходы к нему?</data>
+            <data key="width">11</data>
+            <data key="x">225</data>
+            <data key="y">375</data>
+        </node>
+        <node id="N173">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">1275</data>
+        </node>
+        <node id="N84">
+            <data key="height">11</data>
+            <data key="label">графа процессов</data>
+            <data key="width">11</data>
+            <data key="x">-275</data>
+            <data key="y">-375</data>
+        </node>
+        <node id="N31">
+            <data key="height">11</data>
+            <data key="label">своё устройство
+в окружающем мире</data>
+            <data key="width">11</data>
+            <data key="x">175</data>
+            <data key="y">-325</data>
+        </node>
+        <node id="N131">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">250</data>
+        </node>
+        <node id="N12">
+            <data key="height">11</data>
+            <data key="label">данные
+</data>
+            <data key="width">11</data>
+            <data key="x">25.000000000000007</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N7">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">125</data>
+            <data key="y">125</data>
+        </node>
+        <node id="N182">
+            <data key="height">11</data>
+            <data key="label">нужно найти в графе всех процессов
+процесс, являющийся графом процессов
+обозначающий переход от графа процессов
+с неизвестным процессом увеличения
+возможностей действия к известному</data>
+            <data key="width">11</data>
+            <data key="x">-1025</data>
+            <data key="y">975</data>
+        </node>
+        <node id="N38">
+            <data key="height">11</data>
+            <data key="label">компилятор
+</data>
+            <data key="width">11</data>
+            <data key="x">-1825</data>
+            <data key="y">200</data>
+        </node>
+        <node id="N163">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">2250</data>
+            <data key="y">300</data>
+        </node>
+        <node id="N158">
+            <data key="height">11</data>
+            <data key="label">mul</data>
+            <data key="width">11</data>
+            <data key="x">2375</data>
+            <data key="y">-225</data>
+        </node>
+        <node id="N4">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">200</data>
+            <data key="y">75</data>
+        </node>
+        <node id="Copy1 of Copy2 of N11">
+            <data key="height">11</data>
+            <data key="label">поиск кратчайшего пути
+</data>
+            <data key="width">11</data>
+            <data key="x">-150</data>
+            <data key="y">-75</data>
+        </node>
+        <node id="N34">
+            <data key="height">11</data>
+            <data key="label">программа</data>
+            <data key="width">11</data>
+            <data key="x">-300</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N193">
+            <data key="height">11</data>
+            <data key="label">ПЛИС</data>
+            <data key="width">11</data>
+            <data key="x">750</data>
+            <data key="y">-900</data>
+        </node>
+        <node id="N121">
+            <data key="height">11</data>
+            <data key="label">fn execute_procedure</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">300</data>
+        </node>
+        <node id="N127">
+            <data key="height">11</data>
+            <data key="label">Разделение на процедуры не обязательно означает
+отдельные области памяти. Сам я записал бы как
+отдельные чтобы использовать для других
+возможных процедур, но программа может найти
+путь поиска пути и исполнения без декодировки и
+другие оптимизации.</data>
+            <data key="width">11</data>
+            <data key="x">1725</data>
+            <data key="y">425</data>
+        </node>
+        <node id="N42">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-225</data>
+            <data key="y">475</data>
+        </node>
+        <node id="N94">
+            <data key="height">11</data>
+            <data key="label">человек</data>
+            <data key="width">11</data>
+            <data key="x">-675</data>
+            <data key="y">-825</data>
+        </node>
+        <node id="N136">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">1925</data>
+            <data key="y">-550</data>
+        </node>
+        <node id="N29">
+            <data key="height">11</data>
+            <data key="label">перебор путей графа процессов
+для нахождения кратчайших</data>
+            <data key="width">11</data>
+            <data key="x">-500</data>
+            <data key="y">-275</data>
+        </node>
+        <node id="N5">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">200</data>
+            <data key="y">50</data>
+        </node>
+        <node id="N151">
+            <data key="height">11</data>
+            <data key="label">запись</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">2100</data>
+            <data key="y">-150</data>
+        </node>
+        <node id="N91">
+            <data key="height">11</data>
+            <data key="label">путеискатель</data>
+            <data key="width">11</data>
+            <data key="x">-800</data>
+            <data key="y">-875</data>
+        </node>
+        <node id="N20">
+            <data key="height">11</data>
+            <data key="label">декодер</data>
+            <data key="width">11</data>
+            <data key="x">50</data>
+            <data key="y">-100</data>
+        </node>
+        <node id="N90">
+            <data key="height">11</data>
+            <data key="label">процессы</data>
+            <data key="width">11</data>
+            <data key="x">-775</data>
+            <data key="y">-775</data>
+        </node>
+        <node id="N192">
+            <data key="height">11</data>
+            <data key="label">цифровая ЭВМ</data>
+            <data key="width">11</data>
+            <data key="x">625</data>
+            <data key="y">-950</data>
+        </node>
+        <node id="N6">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">125</data>
+            <data key="y">75</data>
+        </node>
+        <node id="Copy2 of N11">
+            <data key="height">11</data>
+            <data key="label">поиск кратчайшего пути
+</data>
+            <data key="width">11</data>
+            <data key="x">-325</data>
+            <data key="y">-75</data>
+        </node>
+        <node id="N134">
+            <data key="height">11</data>
+            <data key="label">тут не сказано потому, что очевидно,
+что в начале может быть любая
+программа и потому некорректно было бы
+связать начало запуска с прочими, затем с
+agent0.1, или наоборот</data>
+            <data key="width">11</data>
+            <data key="x">1227</data>
+            <data key="y">375</data>
+        </node>
+        <node id="N101">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">-675</data>
+        </node>
+        <node id="Copy1 of N43">
+            <data key="height">11</data>
+            <data key="shape">square</data>
+            <data key="width">11</data>
+            <data key="x">-175</data>
+            <data key="y">600</data>
+        </node>
+        <node id="N45">
+            <data key="height">11</data>
+            <data key="label">расширение 1</data>
+            <data key="width">11</data>
+            <data key="x">-325</data>
+            <data key="y">575</data>
+        </node>
+        <node id="Copy1 of N50">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-100</data>
+            <data key="y">550</data>
+        </node>
+        <node id="N55">
+            <data key="height">11</data>
+            <data key="width">11</data>
+            <data key="x">-125</data>
+            <data key="y">725</data>
+        </node>
+        <node id="N130">
+            <data key="height">11</data>
+            <data key="label">fn process_graph_to_procedure</data>
+            <data key="width">11</data>
+            <data key="x">1825</data>
+            <data key="y">250</data>
+        </node>
+        <edge id="E118" source="N104" target="N102"/>
+        <edge id="E29" source="N8" target="N30">
+            <data key="label">кто</data>
+        </edge>
+        <edge id="E133" source="N111" target="N116">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E174" source="N141" target="N143">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E179" source="N148" target="N149"/>
+        <edge id="E33" source="Copy2 of N11" target="N33">
+            <data key="label">смысл</data>
+        </edge>
+        <edge id="E204" source="N173" target="N174"/>
+        <edge id="E169" source="N137" target="N138">
+            <data key="color">#666666</data>
+            <data key="label">в одной из реализаций</data>
+        </edge>
+        <edge id="E105" source="N90" target="N94"/>
+        <edge id="E188" source="N138" target="N156"/>
+        <edge id="E170" source="N138" target="N139"/>
+        <edge id="E16" source="N8" target="N12">
+            <data key="color">#00ccff</data>
+            <data key="label">записывает</data>
+        </edge>
+        <edge id="E202" source="N170" target="N171"/>
+        <edge id="E48" source="N17" target="N47">
+            <data key="label">содержит</data>
+        </edge>
+        <edge id="E194" source="N120" target="N162">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E116" source="N102" target="N8"/>
+        <edge id="E173" source="N141" target="N142">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E220" source="N192" target="N190"/>
+        <edge id="E23" source="N19" target="N13"/>
+        <edge id="E15" source="N11" target="Copy2 of N11">
+            <data key="color">#ff0000</data>
+            <data key="label">изменяет</data>
+        </edge>
+        <edge id="E26" source="N26" target="N26"/>
+        <edge id="E78" source="N61" target="N62"/>
+        <edge id="E224" source="N194" target="N192"/>
+        <edge id="E117" source="N102" target="N103"/>
+        <edge id="E81" source="N65" target="N66"/>
+        <edge id="E28" source="N28" target="N29"/>
+        <edge id="E60" source="N45" target="N51"/>
+        <edge id="E74" source="N50" target="N55">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E144" source="N120" target="N122">
+            <data key="direction">undirected</data>
+            <data key="label">объяснение</data>
+        </edge>
+        <edge id="E79" source="N60" target="N63">
+            <data key="color">#000000</data>
+            <data key="label">кстати</data>
+        </edge>
+        <edge id="E27" source="N21" target="N27"/>
+        <edge id="E212" source="N181" target="N171"/>
+        <edge id="E175" source="N141" target="N144">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E226" source="N192" target="N197"/>
+        <edge id="E199" source="N105" target="N167">
+            <data key="direction">undirected</data>
+        </edge>
+        <edge id="E219" source="N191" target="N192"/>
+        <edge id="E52" source="N17" target="N49"/>
+        <edge id="E131" source="N109" target="N115">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E145" source="N121" target="N123"/>
+        <edge id="E51" source="N17" target="N48"/>
+        <edge id="E177" source="N110" target="N148"/>
+        <edge id="E180" source="N149" target="N150"/>
+        <edge id="E142" source="N115" target="N120">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E13" source="N8" target="N10"/>
+        <edge id="E63" source="Copy1 of N11" target="N59">
+            <data key="label">смысл</data>
+        </edge>
+        <edge id="E61" source="N51" target="N52">
+            <data key="color">#33ff99</data>
+        </edge>
+        <edge id="E186" source="N138" target="N154"/>
+        <edge id="E65" source="N53" target="N55"/>
+        <edge id="E147" source="N119" target="N125"/>
+        <edge id="E154" source="N128" target="N124"/>
+        <edge id="E213" source="N179" target="N183"/>
+        <edge id="E3" source="N1" target="N4" sourceport="Port 1"/>
+        <edge id="E12" source="N9" target="N8"/>
+        <edge id="E161" source="N109" target="N133">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E206" source="N172" target="N176"/>
+        <edge id="E21" source="N11" target="N17">
+            <data key="label">есть</data>
+            <data key="label.font">Noto Sans,7,-1,0,50,0,0,0,0,0</data>
+        </edge>
+        <edge id="E20" source="Copy2 of N11" target="N16">
+            <data key="label">есть</data>
+            <data key="label.font">Noto Sans,7,-1,0,50,0,0,0,0,0</data>
+        </edge>
+        <edge id="E165" source="N106" target="N135">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E143" source="N115" target="N121">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E84" source="N68" target="N69">
+            <data key="color">#33ff99</data>
+        </edge>
+        <edge id="E71" source="Copy1 of N42" target="N52">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E87" source="N66" target="N70"/>
+        <edge id="E153" source="N125" target="N128"/>
+        <edge id="E90" source="N73" target="N74"/>
+        <edge id="E218" source="N189" target="N191"/>
+        <edge id="E155" source="N124" target="N129"/>
+        <edge id="E46" source="N45" target="Copy1 of N42">
+            <data key="color">#33ff99</data>
+        </edge>
+        <edge id="E101" source="N84" target="N89">
+            <data key="label">чего</data>
+        </edge>
+        <edge id="E121" source="N105" target="N106">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E70" source="Copy1 of N53" target="N52"/>
+        <edge id="E208" source="N174" target="N178"/>
+        <edge id="E222" source="N189" target="N194"/>
+        <edge id="E114" source="N99" target="N100">
+            <data key="label">есть</data>
+        </edge>
+        <edge id="E166" source="N135" target="N136"/>
+        <edge id="E43" source="N42" target="N43"/>
+        <edge id="E64" source="N53" target="N54"/>
+        <edge id="E137" source="N108" target="N113">
+            <data key="direction">undirected</data>
+            <data key="label">кстати</data>
+        </edge>
+        <edge id="E200" source="N168" target="N169">
+            <data key="direction">undirected</data>
+            <data key="label">размышление</data>
+        </edge>
+        <edge id="E9" source="N5" target="N8"/>
+        <edge id="E127" source="N112" target="N107">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E162" source="N133" target="N134">
+            <data key="direction">undirected</data>
+        </edge>
+        <edge id="E40" source="N38" target="N39">
+            <data key="label">смысл</data>
+        </edge>
+        <edge id="E66" source="N53" target="N56"/>
+        <edge id="E54" source="Copy1 of N43" target="N50"/>
+        <edge id="E134" source="N110" target="N112"/>
+        <edge id="E24" source="N13" target="N20"/>
+        <edge id="E7" source="N5" target="N3"/>
+        <edge id="E88" source="N70" target="N71"/>
+        <edge id="E207" source="N174" target="N177"/>
+        <edge id="E5" source="N1" target="N6" sourceport="Port 1"/>
+        <edge id="E94" source="N78" target="N79"/>
+        <edge id="E192" source="N118" target="N160">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E149" source="N110" target="N126"/>
+        <edge id="E184" source="N145" target="N152">
+            <data key="direction">undirected</data>
+        </edge>
+        <edge id="E146" source="N120" target="N124"/>
+        <edge id="E92" source="N75" target="N76"/>
+        <edge id="E124" source="N110" target="N109">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E138" source="N109" target="N114">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E183" source="N151" target="N110"/>
+        <edge id="E125" source="N110" target="N111">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E41" source="N17" target="N38">
+            <data key="label">содержит</data>
+        </edge>
+        <edge id="E158" source="N129" target="N131"/>
+        <edge id="E104" source="N93" target="N95"/>
+        <edge id="E156" source="N115" target="N130">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E191" source="N138" target="N159"/>
+        <edge id="E49" source="N46" target="N47">
+            <data key="label">вывод</data>
+        </edge>
+        <edge id="E205" source="N175" target="N174"/>
+        <edge id="E50" source="N47" target="N38">
+            <data key="label">вывод</data>
+        </edge>
+        <edge id="E103" source="N92" target="N91"/>
+        <edge id="E196" source="N121" target="N164">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E135" source="N116" target="N108"/>
+        <edge id="E56" source="Copy1 of Copy1 of N43" target="Copy1 of N50"/>
+        <edge id="E2" source="N2" target="N3"/>
+        <edge id="E67" source="N54" target="Copy1 of N53"/>
+        <edge id="E203" source="N171" target="N172"/>
+        <edge id="E91" source="N74" target="N75"/>
+        <edge id="E99" source="N85" target="N86">
+            <data key="label">этим</data>
+        </edge>
+        <edge id="E172" source="N138" target="N141">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E77" source="N60" target="N61"/>
+        <edge id="E69" source="N56" target="Copy1 of N53"/>
+        <edge id="E225" source="N195" target="N196">
+            <data key="label">размышление</data>
+        </edge>
+        <edge id="E72" source="Copy1 of N43" target="N53">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E57" source="Copy1 of Copy1 of Copy1 of N43" target="Copy1 of N42"/>
+        <edge id="E157" source="N130" target="N131"/>
+        <edge id="E152" source="N115" target="N127">
+            <data key="direction">undirected</data>
+            <data key="label">кстати</data>
+        </edge>
+        <edge id="E164" source="N123" target="N150"/>
+        <edge id="E197" source="N160" target="N165"/>
+        <edge id="E221" source="N192" target="N193"/>
+        <edge id="E73" source="N50" target="N54">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E14" source="Copy1 of N11" target="N11">
+            <data key="color">#ff0000</data>
+            <data key="label">изменяет</data>
+        </edge>
+        <edge id="E201" source="N168" target="N170">
+            <data key="label">пример</data>
+        </edge>
+        <edge id="E106" source="N94" target="N92"/>
+        <edge id="E100" source="N87" target="N88">
+            <data key="label">размышление</data>
+        </edge>
+        <edge id="E148" source="N118" target="N126"/>
+        <edge id="E17" source="N12" target="N13">
+            <data key="color">#00ccff</data>
+            <data key="label">преобразуются в</data>
+        </edge>
+        <edge id="E193" source="N119" target="N161">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E126" source="N112" target="N150"/>
+        <edge id="E141" source="N115" target="N119">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="Copy1 of E55" source="Copy1 of N50" target="Copy1 of Copy1 of Copy1 of N43"/>
+        <edge id="E83" source="N44" target="N68"/>
+        <edge id="E80" source="N64" target="N65"/>
+        <edge id="E120" source="N105" target="N104"/>
+        <edge id="E150" source="N126" target="N116"/>
+        <edge id="E39" source="N11" target="N11">
+            <data key="color">#ff0000</data>
+            <data key="label">изменяет</data>
+        </edge>
+        <edge id="E223" source="N189" target="N195"/>
+        <edge id="E119" source="N103" target="N105"/>
+        <edge id="E89" source="N72" target="N73"/>
+        <edge id="E182" source="N147" target="N151"/>
+        <edge id="E36" source="Copy1 of Copy2 of N11" target="N18">
+            <data key="color">#ff0000</data>
+        </edge>
+        <edge id="E96" source="N82" target="N84">
+            <data key="label">чего</data>
+        </edge>
+        <edge id="E30" source="N13" target="N30">
+            <data key="label">среди</data>
+        </edge>
+        <edge id="E113" source="N98" target="N100">
+            <data key="label">есть</data>
+        </edge>
+        <edge id="E95" source="N13" target="N81">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E38" source="N11" target="N37">
+            <data key="label">смысл</data>
+        </edge>
+        <edge id="E102" source="N91" target="N93"/>
+        <edge id="E108" source="N86" target="N90"/>
+        <edge id="E110" source="N82" target="N97"/>
+        <edge id="E176" source="N138" target="N145">
+            <data key="direction">undirected</data>
+            <data key="label">размышление</data>
+        </edge>
+        <edge id="E4" source="N1" target="N5" sourceport="Port 1"/>
+        <edge id="E32" source="N30" target="N32"/>
+        <edge id="E19" source="N14" target="N15">
+            <data key="label">зависимость/условие</data>
+        </edge>
+        <edge id="E216" source="N170" target="N187">
+            <data key="direction">undirected</data>
+            <data key="label">размышление</data>
+        </edge>
+        <edge id="E122" source="N106" target="N112"/>
+        <edge id="E189" source="N138" target="N157"/>
+        <edge id="E139" source="N111" target="N117">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E211" source="N180" target="N181"/>
+        <edge id="E128" source="N112" target="N108">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E111" source="N97" target="N98"/>
+        <edge id="E109" source="N83" target="N86">
+            <data key="label">расширение 1</data>
+        </edge>
+        <edge id="E167" source="N109" target="N136"/>
+        <edge id="E214" source="N183" target="N184"/>
+        <edge id="E82" source="N67" target="N64"/>
+        <edge id="E136" source="N110" target="N108"/>
+        <edge id="E75" source="N50" target="N56">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E217" source="N180" target="N188">
+            <data key="label">следующий ход</data>
+        </edge>
+        <edge id="E25" source="Copy1 of N11" target="N21">
+            <data key="label">есть</data>
+        </edge>
+        <edge id="E129" source="N102" target="N115">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E209" source="N176" target="N179"/>
+        <edge id="E22" source="N13" target="N18">
+            <data key="label">есть</data>
+        </edge>
+        <edge id="E159" source="N131" target="N132"/>
+        <edge id="E195" source="N130" target="N163">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E37" source="Copy1 of Copy2 of N11" target="N35">
+            <data key="label">смысл</data>
+        </edge>
+        <edge id="E112" source="N97" target="N99"/>
+        <edge id="E42" source="N43" target="N42"/>
+        <edge id="E47" source="N17" target="N46">
+            <data key="label">содержит</data>
+        </edge>
+        <edge id="E215" source="N184" target="N180"/>
+        <edge id="E140" source="N115" target="N118">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E86" source="N42" target="N69">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E107" source="N92" target="N96">
+            <data key="label">к сведению</data>
+        </edge>
+        <edge id="E76" source="Copy1 of Copy1 of N43" target="Copy1 of N53">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E18" source="Copy2 of N11" target="N13">
+            <data key="color">#ff0000</data>
+            <data key="label">изменяет</data>
+        </edge>
+        <edge id="E10" source="N8" target="N3"/>
+        <edge id="E98" source="N83" target="N85">
+            <data key="label">кстати</data>
+        </edge>
+        <edge id="E130" source="N102" target="N116">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E123" source="N109" target="N112"/>
+        <edge id="E190" source="N138" target="N158"/>
+        <edge id="E198" source="N138" target="N166"/>
+        <edge id="E6" source="N1" target="N7" sourceport="Port 1"/>
+        <edge id="E185" source="N138" target="N153"/>
+        <edge id="E163" source="N132" target="N123"/>
+        <edge id="E11" source="N10" target="N8"/>
+        <edge id="E97" source="N83" target="N82">
+            <data key="label">чего</data>
+        </edge>
+        <edge id="E55" source="N50" target="Copy1 of Copy1 of N43"/>
+        <edge id="E93" source="N77" target="N78"/>
+        <edge id="E53" source="Copy1 of N42" target="Copy1 of N43"/>
+        <edge id="E227" source="N193" target="N197">
+            <data key="label">может симулировать</data>
+        </edge>
+        <edge id="E181" source="N150" target="N147"/>
+        <edge id="E171" source="N138" target="N140"/>
+        <edge id="E160" source="N120" target="N125"/>
+        <edge id="E62" source="N52" target="N53"/>
+        <edge id="E85" source="N69" target="N69"/>
+        <edge id="E1" source="N1" target="N1"/>
+        <edge id="E34" source="N11" target="Copy1 of Copy2 of N11">
+            <data key="color">#ff0000</data>
+            <data key="label">изменяет</data>
+        </edge>
+        <edge id="E168" source="N136" target="N137"/>
+        <edge id="E210" source="N177" target="N179"/>
+        <edge id="E187" source="N138" target="N155"/>
+        <edge id="E45" source="N44" target="N45"/>
+        <edge id="E58" source="N42" target="Copy1 of N42">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E35" source="Copy1 of Copy2 of N11" target="N34">
+            <data key="label">есть</data>
+        </edge>
+        <edge id="E8" source="N2" target="N7"/>
+        <edge id="E31" source="N30" target="N31"/>
+        <edge id="E115" source="N98" target="N101"/>
+        <edge id="E68" source="N55" target="Copy1 of N53"/>
+        <edge id="E132" source="N115" target="N108"/>
+        <edge id="E44" source="N44" target="N42">
+            <data key="color">#33ff99</data>
+        </edge>
+        <edge id="E178" source="N141" target="N146">
+            <data key="color">#666666</data>
+        </edge>
+        <edge id="E151" source="N116" target="N125"/>
+        <edge id="E59" source="N43" target="Copy1 of Copy1 of N43">
+            <data key="color">#666666</data>
+        </edge>
+    </graph>
+</graphml>
