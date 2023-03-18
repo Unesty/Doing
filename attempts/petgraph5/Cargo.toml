@@ -1,0 +1,42 @@
+[package]
+name = "pathfindingIsAI"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bincode = "1.3.3"
+byte-slice-cast = "1.2.2"
+memmap = "0.7.0"
+petgraph = { version = "0.6.2", features = ["all", "serde", "serde_derive", "serde-1"] }
+rand = "0.8.5"
+serde = { version = "1.0.152", features = ["serde_derive", "derive"] }
+serde_derive = "1.0.152"
+serde_json = "1.0.93"
+
+[[bin]]
+name = "apsp"
+path = "src/apsp.rs"
+#[[bin]]
+#name = "apsp2"
+#path = "src/apsp2.rs"
+#[[bin]]
+#name = "apsp3"
+#path = "src/apsp3.rs"
+#[[bin]]
+#name = "ser"
+#path = "src/ser.rs"
+#[[bin]]
+#name = "ser2"
+#path = "src/ser2.rs"
+#[[bin]]
+#name = "loadgr"
+#path = "src/serl.rs"
+#[[bin]]
+#name = "rndstates"
+#path = "src/rndstates.rs"
+[[bin]]
+name = "procstates"
+path = "src/procstates.rs"
+# [[bin]]
+# name = "avr_ps"
+# path = "src/avr_ps_main.rs"

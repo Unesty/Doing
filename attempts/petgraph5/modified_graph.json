@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    {
+      "name": "0",
+      "value": 2
+    },
+    {
+      "name": "1",
+      "value": 4
+    },
+    {
+      "name": "2",
+      "value": 6
+    }
+  ],
+  "node_holes": [],
+  "edge_property": "directed",
+  "edges": [
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      0,
+      2,
+      6
+    ]
+  ]
+}
