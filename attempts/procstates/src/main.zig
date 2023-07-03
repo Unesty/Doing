@@ -1,196 +1,6 @@
 const std = @import("std");
+const jp = @import("2bitjmpproc.zig");
 
-var mem: u16 = 0;
-var mem2: u16 = 0;
-var outs: [0xFFFF]u16 = [1]u16{0} ** 0xFFFF;
-
-
-
-const ProcessorState = packed struct {
-    i0: u2,
-    a0: u2,
-    i1: u2,
-    a1: u2,
-    i2: u2,
-    a2: u2,
-    i3: u2,
-    a3: u2,
-};
-const ProcessorMem = packed struct {
-    v0: u4,
-    v1: u4,
-    v2: u4,
-    v3: u4,
-};
-
-fn getpsi(buf: u16, id: u2) u2 {
-    const cs: ProcessorState = @bitCast(ProcessorState, buf);
-    //     std.debug.print("getpsi:{any}\n",.{cs});
-    switch (id) {
-        0 => return cs.i0,
-        1 => return cs.i1,
-        2 => return cs.i2,
-        3 => return cs.i3,
-    }
-}
-fn getpsa(buf: u16, id: u2) u2 {
-    const cs: ProcessorState = @bitCast(ProcessorState, buf);
-    //     std.debug.print("getpsa:{any}\n",.{cs});
-    switch (id) {
-        0 => return cs.a0,
-        1 => return cs.a1,
-        2 => return cs.a2,
-        3 => return cs.a3,
-    }
-}
-fn getpsv(buf: u16, id: u2) u4 {
-    const cs: ProcessorMem = @bitCast(ProcessorMem, buf);
-    //     std.debug.print("getpsv{any}\n",.{cs});
-    switch (id) {
-        0 => return cs.v0,
-        1 => return cs.v1,
-        2 => return cs.v2,
-        3 => return cs.v3,
-    }
-}
-fn setpsv(buf2: *u16, id: u2, v: u4) void {
-    const cs: *ProcessorMem = @ptrCast(*ProcessorMem, buf2);
-    //     std.debug.print("v={} id={}\nsetpsv was:{any}\n",.{v, id, cs});
-    switch (id) {
-        0 => cs.v0 = v,
-        1 => cs.v1 = v,
-        2 => cs.v2 = v,
-        3 => cs.v3 = v,
-    }
-    //     std.debug.print("setpsv now:{any}\n",.{cs});
-}
-
-// instructions
-const Op = enum {
-    put,
-    loop,
-    inc,
-    dec,
-};
-
-var accum: u4 = 0;
-const Putstate = enum { load, store };
-var putstate = Putstate.load;
-// Get value from location on one invoke, set value to location on another
-fn put(buf: u16, buf2: *u16, arg: u2) void {
-    if (putstate == Putstate.load) {
-        accum = getpsv(buf, arg);
-        putstate = Putstate.store;
-    } else {
-        putstate = Putstate.load;
-        setpsv(buf2, arg, accum);
-    }
-}
-// ++
-fn inc(buf: u16, buf2: *u16, arg: u2) void {
-    var added: u4 = 0;
-    var overflow = @addWithOverflow(u4, getpsv(buf, arg), 1, &added);
-    _ = overflow;
-    setpsv(buf2, arg, added);
-}
-// --
-fn dec(buf: u16, buf2: *u16, arg: u2) void {
-    var subbed: u4 = 0;
-    var overflow = @subWithOverflow(u4, getpsv(buf, arg), 1, &subbed);
-    _ = overflow;
-    setpsv(buf2, arg, subbed);
-}
-
-fn execute(buf: u16) u16 {
-    var buf2 = buf;
-    var pc: u2 = 0;
-    var jumps = [4]i32{ 0, 0, 0, 0 };
-    {
-        // get jumps once, so no infinite loops possible
-        var i: u2 = 0;
-        while (true) {
-            var ins = getpsi(buf, i);
-            var arg = getpsa(buf, i);
-            if (ins == 1) {
-                std.log.debug("buf:{b} ins:{b}", .{ buf, ins });
-                var jc: i32 = @intCast(i32, arg) + 1; // 0 loops are useless
-                if (i > 0) {
-                    var ii = i - 1;
-                    while (true) {
-                        jc *= jumps[ii]; // loop times loop
-                        if (ii == 0) break;
-                        ii -= 1;
-                    }
-                }
-                jumps[i] = jc;
-            }
-            if (i == 3) break;
-            i += 1;
-        }
-    }
-    // Надо вернуться к j по
-    var j: u8 = 0;
-    var exect = true;
-    while (exect) {
-        while (true) {
-            var ins = getpsi(buf, pc);
-            var arg = getpsa(buf, pc);
-            switch (ins) {
-                0 => {
-                    put(buf, &buf2, arg);
-                },
-                1 => {},
-                2 => {
-                    inc(buf, &buf2, arg);
-                },
-                3 => {
-                    dec(buf, &buf2, arg);
-                },
-            }
-            if (pc == 3) break;
-            pc += 1;
-        }
-        // Тут проверяем нужен ли jmp. Начинаем от 0. Если jumps[j]>0, то уменьшаем число и возвращаемся к исполнению.
-        // Если jumps[j]<=0, то j++ и если j<4 повторяем цикл проверки.
-        while (j < 4) {
-            if (jumps[j] > 0) {
-                jumps[j] -= 1;
-                break;
-            } else {
-                j += 1;
-            }
-        } else {
-            //             std.debug.print("ex\n", .{});
-            exect = false;
-        }
-    }
-    putstate = Putstate.load;
-
-    accum = 0;
-    return buf2;
-}
-
-fn loopall() void {
-    var i: u16 = 0;
-    while (i < 0xFFFF) {
-        //         mem2 = execute(mem);
-        //         outs[mem]=mem2;
-        //         mem=mem2;
-        mem2 = execute(i);
-        outs[i] = mem2;
-        std.log.debug("{b}to{b}\n", .{ i, mem2 });
-        std.time.sleep(100000000);
-        i += 1;
-    }
-    std.log.debug("{any}", .{outs});
-}
-
-fn getsingle(num: u16) u16 {
-    mem2 = execute(num);
-    outs[num] = mem2;
-    std.log.info("{b}=>{b}", .{ num, mem2 });
-    return mem2;
-}
 
 fn userget() !void {
     var prev: u16 = 0;
@@ -206,22 +16,146 @@ fn userget() !void {
         const clinput = try stdin.reader().readUntilDelimiterAlloc(allocator, '\n', 1024);
         defer allocator.free(clinput);
         innum = std.fmt.parseInt(u16, clinput, 0) catch {
-            prev = getsingle(prev);
+            prev = jp.getsingle(prev);
             continue;
         };
-        prev = getsingle(innum);
+        prev = jp.getsingle(innum);
     }
 }
 
-var path: [0xFFF]u16 = [1]u16{0} ** 0xFFF;
-var pathlen = 0;
-var bestpath: [0xFFF]u16 = [1]u16{0} ** 0xFFF;
-var bestpathlen = 0;
-fn longest_path() void{
-    // iterate after each command to get path until loop to find longest
+const VisitedRet = struct {
+    id: u16,
+    allvisited: bool,
+};
+fn getFirstUnvisitedId(visited: *[(0xFFFF+1)]u1) VisitedRet {
+    for(0..(0xFFFF+1)) |aid| {
+        if(visited[aid] == 0){
+            const aidv = VisitedRet{.id = @intCast(u16, aid),.allvisited = false};
+            return aidv;
+        }
+    }
+    const allvisited = VisitedRet{.id = @intCast(u16, 0xFFFF),.allvisited = true};
+    return allvisited;
+}
+
+var path: [(0xFFFF+1)]u16 = [1]u16{0} ** (0xFFFF+1);
+var pathlen: u16 = 0;
+var pvisited: [(0xFFFF+1)]u1 = [1]u1{0} ** (0xFFFF+1);
+
+var bestpath: [(0xFFFF+1)]u16 = [1]u16{0} ** (0xFFFF+1);
+var bestpathlen: u16 = 0;
+var bpvisited: [(0xFFFF+1)]u1 = [1]u1{0} ** (0xFFFF+1);
+
+// fn longest_path() void{
+//     // iterate after each command to get path until loop to find longest
+//     var prev: u16 = 0;
+//     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
+//     defer _ = gpa.deinit();
+//     const allocator = gpa.allocator();
+//     var alpath = std.ArrayList(u16).init(allocator);
+//     var visited = std.ArrayList(u16).init(allocator);
+//     while (true) {
+//         var innum: u16 = 0;
+//
+//         alpath.resize(0);
+//         prev = getsingle(prev);
+//         std.mem.indexOfScalar(,,) orelse {
+//             innum = getFirstUnvisitedId(, );
+//             prev = getsingle(innum);
+//             continue;
+//         };
+//     }
+// }
+
+var gvisited:  [(0xFFFF+1)]u1 = [1]u1{0} ** (0xFFFF+1);
+
+fn iteratePath(start: u16) void {
+    // Don't forget to @memset to 0 path and pvisited before this
+    @memset(path[0..], 0);
+    @memset(pvisited[0..], 0); // Why this makes any changes?
+
+    pathlen = 0;
+    var cs: u16 = start; // состояние
+    var ns: u16 = undefined; // следующее состояние
+    while(true) {
+        // Ищем есть ли цикл.
+        // Для этого смотрим не пройден ли уже
+        // нынешний индекс.
+        var looped = false;
+        if(pathlen>0) {
+            if(pvisited[cs] == 1){
+                // So no need to add anything to path.
+                looped = true;
+//                 std.debug.print("next:{any} ", .{getNext(cs)});
+//                 break;
+            }
+        }
+        if(looped) {
+            return;
+        } else {
+//             std.log.debug("cs:{d} ", .{cs});
+            pathlen += 1;
+            ns = jp.getNext(cs);
+//             std.log.debug("ns:{d} ", .{ns});
+            path[cs] = ns;
+            gvisited[cs] = 1;
+            pvisited[cs] = 1;
+            cs = ns;
+        }
+    }
+}
+
+fn iterateAllPaths() void {
+    for(4..20) |i| {
+        iteratePath(@intCast(u16, i));
+//         std.debug.print("\n", .{});
+        std.debug.print("path{d}:\n",.{i});
+        for(0..0xFFFF) |ii|{
+            if(pvisited[ii]==1) {
+                std.debug.print("{d} ", .{path[ii]});
+            }
+        }
+        std.debug.print("\n", .{});
+    }
+}
+
+fn longestPath() void {
+    // DFS among all possible
+
+    var cs: u16 = 0; // current state
+    while (true) {
+        iteratePath(cs);
+        if(pathlen >= bestpathlen) {
+            @memcpy(bestpath[0..], path[0..]);
+            @memcpy(bpvisited[0..], pvisited[0..]);
+            bestpathlen = pathlen;
+            std.debug.print("new bestpath{d}:\n",.{cs});
+            for(0..0xFFFF) |ii|{
+                if(pvisited[ii]==1) {
+                    std.debug.print("{d} ", .{path[ii]});
+                }
+            }
+            std.debug.print("\n", .{});
+        }
+        const vret = getFirstUnvisitedId(&gvisited);
+        if(vret.allvisited) {
+            std.debug.print("FINAL bestpath:\n",.{});
+            for(0..0xFFFF) |ii|{
+                if(bpvisited[ii]==1) {
+                    std.debug.print("{d} ", .{ii});
+                }
+            }
+            std.debug.print("FINAL length:{}\n",.{bestpathlen});
+            std.debug.print("\n", .{});
+            break;
+        }
+        cs = vret.id;
+    }
 }
 
 pub fn main() !void {
-
-    try userget();
+    std.time.sleep(1000000000000000);
+//     try userget();
+    longestPath();
+//     iterateAllPaths();
 }
